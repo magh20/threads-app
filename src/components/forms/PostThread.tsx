@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Button } from "../ui/button";
 import * as z from "zod";
 import { Textarea } from "../ui/textarea";
-// import { updateUser } from "@/lib/actions/user.actions";
 import { usePathname, useRouter } from "next/navigation";
 import { threadValidation } from "@/lib/validations/thread";
 import { createThread } from "@/lib/actions/thread.actions";
@@ -47,8 +46,7 @@ interface Props {
                         <FormItem className="flex gap-3 w-full flex-col">
                             <FormLabel className=" text-base-semibold text-light-2">Content</FormLabel>
                             <FormControl className=" no-focus border border-dark-4 bg-dark-3 text-light-1">
-                                <Textarea rows={15} 
-                                {...field} />
+                                <Textarea rows={15} {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
