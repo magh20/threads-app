@@ -36,8 +36,8 @@ const Comment = ({threadId, currentUserImage, currentUserId} : Props) => {
                 <FormField control={form.control} name="thread"
                     render={({ field }) => (
                         <FormItem className="flex gap-3 w-full items-center">
-                            <FormLabel>
-                                <Image src={currentUserImage} alt="profile image" width={48} height={48} className=" rounded-full object-cover" />
+                            <FormLabel className="relative object-cover w-[48px] h-[48px]">
+                                <Image src={currentUserImage} alt="profile image" fill className=" rounded-full object-cover" />
                             </FormLabel>
                             <FormControl className=" border-none bg-transparent">
                                 <Input type="text" placeholder="Comment..." className=" no-focus text-light-1 outline-none" {...field} />
