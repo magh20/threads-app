@@ -23,7 +23,7 @@ interface Props {
             image: string;
         }
     }[];
-    isComment: boolean;
+    isComment?: boolean;
 }
 
 const ThreadCard = ({id, currentUserId, parentId, content, author, community, createdAt, comments, isComment} : Props) => {
