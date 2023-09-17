@@ -16,9 +16,9 @@ interface Params {
 }
 
 export async function updateUser({userId, username, name, bio, image, path}: Params): Promise<void> {
-    connectToDB();
-
     try {
+        connectToDB();
+        
         await User.findOneAndUpdate(
             { id: userId }, 
             {
