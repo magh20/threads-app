@@ -28,7 +28,6 @@ const Page = async () => {
                          bio={community.bio} members={community.members} />
                         </>
                     ))}
-                    <p className=" text-white">hi</p>
                 </>
             )}
         </div>
