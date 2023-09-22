@@ -18,7 +18,7 @@ const Page = async () => {
     <section>
         <h1 className=" head-text mb-1">communities</h1>
         <div className=" mt-14 flex flex-col gap-9">
-            {result.communities.length === 1 ? (
+            {result.communities.length === 0 ? (
             <p className=" no-result">No communities</p>
             ) : (
                 <>
@@ -28,7 +28,7 @@ const Page = async () => {
                          bio={community.bio} members={community.members} />
                         </>
                     ))}
-                    <p>hi</p>
+                    <p className=" text-white">hi</p>
                 </>
             )}
         </div>
