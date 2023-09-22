@@ -23,8 +23,11 @@ const Page = async () => {
             ) : (
                 <>
                     {result.communities.map((community)=>(
+                        <>
                         <CommunityCard key={community.id} id={community.id} name={community.name} username={community.username} imgUrl={community.image}
                          bio={community.bio} members={community.members} />
+                         <p>hello</p>
+                         </>
                     ))}
                 </>
             )}
