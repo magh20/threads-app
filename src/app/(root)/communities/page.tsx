@@ -18,7 +18,7 @@ const Page = async () => {
     <section>
         <h1 className=" head-text mb-1">communities</h1>
         <div className=" mt-14 flex flex-col gap-9">
-            {result.communities.length === 0 ? (
+            {result.communities.length === 1 ? (
             <p className=" no-result">No communities</p>
             ) : (
                 <>
@@ -26,7 +26,6 @@ const Page = async () => {
                         <>
                         <CommunityCard key={community.id} id={community.id} name={community.name} username={community.username} imgUrl={community.image}
                          bio={community.bio} members={community.members} />
-                         <p>hello</p>
                         </>
                     ))}
                     <p>hi</p>
