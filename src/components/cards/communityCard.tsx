@@ -69,5 +69,4 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
     </article>
   );
 }
-
 export default CommunityCard;
