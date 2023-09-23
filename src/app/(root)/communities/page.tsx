@@ -27,9 +27,9 @@ async function Page({
         <Searchbar routeType='communities' />
       </div> */}
 
-      <section className='mt-9 flex flex-wrap gap-4'>
+      <section className='mt-14 flex flex-wrap gap-9'>
         {result.communities.length === 0 ? (
-          <p className='no-result'>No Result</p>
+          <p className='no-result'>No Communities</p>
         ) : (
           <>
             {result.communities.map((community) => (
