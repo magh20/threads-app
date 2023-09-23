@@ -5,6 +5,7 @@ import { fetchUser } from "@/lib/actions/user.actions";
 import { currentUser } from "@clerk/nextjs";
 import { redirect } from "next/navigation";
 
+export const revalidate = 0;
 
 const Page = async ({params} : {params: {id: string}}) => {
     if(!params.id) return null;
