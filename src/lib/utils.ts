@@ -23,7 +23,7 @@ export function formatDateString(dateString: string) {
   const date = new Date(dateString);
   const formattedDate = date.toLocaleDateString(undefined, options);
 
-  const time = date.toLocaleTimeString([], {
+  const time = date.toLocaleTimeString("en-IR", {
     hour: "numeric",
     minute: "2-digit",
   });
